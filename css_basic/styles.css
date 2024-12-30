@@ -28,3 +28,48 @@ body {
       text-align: center;
       background-color: lightgray;
   }
+  @media (max-width: 768px) {
+    body.works_on_smartphone main {
+      flex-direction: column; /* Stack article and aside vertically */
+    }
+    body.works_on_smartphone article,
+    body.works_on_smartphone aside {
+      flex: 1; /* Each takes full width */
+    }
+  }
+  header ul li.logo {
+    font-size: 2em; /* Makes the logo larger */
+}
+body {
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+article {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+article h1 {
+  color: darkblue;
+}
