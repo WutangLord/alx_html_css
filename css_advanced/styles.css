@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #071629;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    background-color: #071629;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner span {
+    display: block;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.banner button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pros {
+    margin-top: 50px;
+}
+
+.pros h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.pros-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pro {
+    text-align: center;
+}
+
+.pro img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Quotes Section */
+.quote {
+    background-color: #C271FF;
+    color: white;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.quote img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.quote blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 600px;
+}
+
+.quote h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.quote p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Videos Section */
+.videos {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.videos h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.video-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 250px;
+    text-align: left;
+}
+
+.video img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.video p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.rating {
+    color: #C271FF;
+    margin: 10px 0;
+}
+
+.duration {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Membership Section */
+.membership {
+    background-color: #071629;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.membership h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.membership-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 200px;
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.member h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.member p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.membership button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.faq-item {
+    width: 40%;
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #071629;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .pros-list, .video-list, .membership-list, .faq-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-item {
+        width: 80%;
+    }
+}
